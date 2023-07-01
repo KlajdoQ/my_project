@@ -4,8 +4,13 @@ Rails.application.routes.draw do
   end
   post "/graphql", to: "graphql#execute"
   root to: "home#index"
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  get "/users", to: "users#index"
+  get "/users/:id", to: "users#show"
+  post "/users", to: "users#create"
+  patch "/users/:id", to: "users#update"
+  delete "/users/:id", to: "users#destroy"
+
+  get "/shows", to: "shows#index"
+  get "/shows/:id", to: "shows#show"
 end

@@ -16,6 +16,7 @@ gem "bootsnap", require: false
 gem 'graphql'
 gem 'graphiql-rails'
 gem 'devise'
+gem 'httparty'
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
